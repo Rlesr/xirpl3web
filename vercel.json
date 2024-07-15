@@ -1,8 +1,12 @@
 {
-  "build": {
-    "command": "./install.sh",
-    "env": {
-      "NODE_OPTIONS": "--legacy-peer-deps"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      },
+      "buildCommand": "./install.sh"
     }
-  }
+  ]
 }
