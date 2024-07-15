@@ -1,5 +1,6 @@
 {
   "build": {
+    "command": "./install.sh",
     "env": {
       "NODE_OPTIONS": "--legacy-peer-deps"
     }
